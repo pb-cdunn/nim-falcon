@@ -105,16 +105,8 @@ type
 
   msa_pos_t* = seq[msa_delta_group_t]
 
-common.usePtr[align_tag_t]
-common.usePtr[align_tags_t]
-common.usePtr[align_tag_col_t]
-common.usePtr[msa_pos_t]
-common.usePtr[msa_base_group_t]
-common.usePtr[seq_coor_t]
-common.usePtr[uint16]
-common.usePtr[uint8]
-common.usePtr[int8]
-common.usePtr[char]
+common.usePtr[int8] #cns_int
+common.usePtr[char] #cns_str
 
 
 proc get_align_tags*(aln_q_seq: cstring; aln_t_seq: cstring; aln_seq_len: seq_coor_t;
