@@ -169,7 +169,7 @@ proc format_seq(sequ: string, col: int): string =
   result[bn .. <(bn+tail)] = sequ[bo .. <(bo+tail)]
   result.setLen(bn+tail)
   #result[(bn+tail)] = '\l' # Python did not add final newline
-proc process_consensus(cargs: ConsensusArgs) {.thread} =
+proc process_consensus(cargs: ConsensusArgs) = #{.thread} =
     discard """
     if thread_msa_array == nil:
       log "Was nil"
