@@ -1,5 +1,5 @@
 # vim: sw=2 ts=2 sts=2 tw=80 et:
-import nimprof
+#import nimprof
 
 from common import log
 from falcon import nil
